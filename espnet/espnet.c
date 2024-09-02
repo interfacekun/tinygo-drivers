@@ -453,14 +453,14 @@ static void* _coex_schm_curr_phase_get(void) {
 	P(_coex_schm_curr_phase_get)
 	return NULL;
 }
-static int _coex_schm_curr_phase_idx_set(int idx) {
-	P(_coex_schm_curr_phase_idx_set)
-	return 0;
-}
-static int _coex_schm_curr_phase_idx_get(void) {
-	P(_coex_schm_curr_phase_idx_get)
-	return 0;
-}
+// static int _coex_schm_curr_phase_idx_set(int idx) {
+// 	P(_coex_schm_curr_phase_idx_set)
+// 	return 0;
+// }
+// static int _coex_schm_curr_phase_idx_get(void) {
+// 	P(_coex_schm_curr_phase_idx_get)
+// 	return 0;
+// }
 
 
 uint32_t _slowclk_cal_get(void) {
@@ -585,8 +585,8 @@ wifi_osi_funcs_t g_wifi_osi_funcs = {
 	._coex_schm_interval_get = _coex_schm_interval_get,
 	._coex_schm_curr_period_get = _coex_schm_curr_period_get,
 	._coex_schm_curr_phase_get = _coex_schm_curr_phase_get,
-	._coex_schm_curr_phase_idx_set = _coex_schm_curr_phase_idx_set,
-	._coex_schm_curr_phase_idx_get = _coex_schm_curr_phase_idx_get,
+	// ._coex_schm_curr_phase_idx_set = _coex_schm_curr_phase_idx_set,
+	// ._coex_schm_curr_phase_idx_get = _coex_schm_curr_phase_idx_get,
 
 	._magic = ESP_WIFI_OS_ADAPTER_MAGIC,
 };
@@ -745,7 +745,7 @@ const wpa_crypto_funcs_t g_wifi_default_wpa_crypto_funcs = {
 // This is a string constant that is used all over ESP-IDF and is also used by
 // libnet80211.a. The main purpose is to be a fixed pointer that can be compared
 // against etc.
-const char *WIFI_EVENT = "WIFI_EVENT";
+// const char *WIFI_EVENT = "WIFI_EVENT";
 
 // Required by libphy.a
 int phy_printf(const char *format, ...) {
