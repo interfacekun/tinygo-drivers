@@ -9,7 +9,6 @@ package espnet
 #cgo CFLAGS: -Iesp-idf/components/esp_event/include
 #cgo CFLAGS: -Iesp-idf/components/esp_netif/include
 #cgo CFLAGS: -Iesp-idf/components/esp_wifi/include
-#cgo CFLAGS: -Iesp-idf/components/freertos/FreeRTOS-Kernel/include
 
 #cgo LDFLAGS: -Lesp-idf/components/esp_wifi/lib/esp32 -lnet80211 -lpp -lphy -lmesh -lcore
 #cgo LDFLAGS: -Tesp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
@@ -20,6 +19,7 @@ package espnet
 */
 import "C"
 
+// #cgo CFLAGS: -Iesp-idf/components/freertos/FreeRTOS-Kernel/include
 type ESPWiFi struct {
 }
 
