@@ -5,14 +5,14 @@ package espnet
 /*
 #cgo CFLAGS: -DCONFIG_IDF_TARGET_ESP32
 #cgo CFLAGS: -Iinclude
-#cgo CFLAGS: -Iesp-idf/components/esp_common/include
-#cgo CFLAGS: -Iesp-idf/components/esp_event/include
-#cgo CFLAGS: -Iesp-idf/components/esp_netif/include
-#cgo CFLAGS: -Iesp-idf/components/esp_wifi/include
-#cgo CFLAGS: -Iesp-idf/components/freertos/FreeRTOS-Kernel/include
+#cgo CFLAGS: -I../../esp-idf/components/esp_common/include
+#cgo CFLAGS: -I../../esp-idf/components/esp_event/include
+#cgo CFLAGS: -I../../esp-idf/components/esp_netif/include
+#cgo CFLAGS: -I../../esp-idf/components/esp_wifi/include
+#cgo CFLAGS: -I../../esp-idf/components/freertos/FreeRTOS-Kernel/include
 
-#cgo LDFLAGS: -Lesp-idf/components/esp_wifi/lib/esp32 -lnet80211 -lpp -lphy -lmesh -lcore
-#cgo LDFLAGS: -Tesp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+#cgo LDFLAGS: -L../../esp-idf/components/esp_wifi/lib/esp32 -lnet80211 -lpp -lphy -lmesh -lcore
+#cgo LDFLAGS: -T../../esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
 
 #include "esp_private/wifi.h"
 #include "esp_wifi_types.h"
