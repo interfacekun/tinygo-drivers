@@ -1,3 +1,5 @@
+//go:build esp32c3
+
 package espnet
 
 /*
