@@ -18,8 +18,10 @@ package espnet
 #include "esp_wifi_types.h"
 #include "espnet.h"
 */
+
 import "C"
 
+// #cgo CFLAGS: -Iesp-idf/components/freertos/FreeRTOS-Kernel/include
 type ESPWiFi struct {
 }
 

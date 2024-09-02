@@ -20,6 +20,7 @@ package espnet
 */
 import "C"
 
+// #cgo CFLAGS: -Iesp-idf/components/freertos/FreeRTOS-Kernel/include
 type ESPWiFi struct {
 }
 
